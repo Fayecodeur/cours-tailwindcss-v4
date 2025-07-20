@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'inscription</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50">
+    <main>
+      <section class="min-h-screen flex">
+        <div
+          class="shrink-0 flex grow sm:grow-0 sm:w-[500px] flex-col justify-center py-12 px-4 min-[400px]:px-8 min-[500px]:px-16"
+        >
+          <div class="mb-20">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-2">
+              Inscription
+            </h2>
+            <a
+              href="#"
+              class="text-sm text-green-600 hover:text-gren-700 block mb-6 font-medium"
+              >Déjà inscrit ? Connectez-vous.</a
+            >
+            <form class="space-y-6 mb-8">
+              <div>
+                <label
+                  for="email"
+                  class="block mb-1 text-sm font-medium text-gray-700"
+                  >Adresse e-mail</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="Votre email"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline focus:outline-gray-400 text-sm"
+                />
+              </div>
+              <div>
+                <label
+                  for="password"
+                  class="block mb-1 text-sm font-medium text-gray-700"
+                  >Mot de passe</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  autocomplete="new-password"
+                  placeholder="Mot de passe"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline focus:outline-gray-400 text-sm"
+                />
+              </div>
+              <div>
+                <label
+                  for="confirm-password"
+                  class="block mb-1 text-sm font-medium text-gray-700"
+                  >Répétez votre mot de passe</label
+                >
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Répétez votre mot de passe"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline focus:outline-gray-400 text-sm"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <input type="checkbox" id="remember-me" name="remember-me"
+                class="w-4 h-4 border-gray-300 rounded mr-2"
+                >
+                <label for="remember-me" class="text-sm text-gray-900">Se souvenir de moi</label>
+              </div>
+
+
+              <button
+              class="w-full py-2 px-4  rounded-md shadow-sm text-base font-medium text-white bg-green-800 hover:bg-green-700 cursor-pointer"
+              >
+                S'inscrire
+              </button>
+            </form>
+
+            <p class="mb-4 text-center text-gray-500">Ou s'inscrire avec :</p>
+            <div class="flex gap-2 justify-center">
+              <a href="#" 
+              class="w-14 h-14 inline-flex justify-center items-center border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
+              >
+              <img src="ressources/ig.svg" class="w-6 h-6" alt="S'inscrire avec Instagram">
+            </a>
+              <a href="#" 
+              class="w-14 h-14 inline-flex justify-center items-center border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
+              >
+              <img src="ressources/pinterest.svg" class="w-6 h-6" alt="S'inscrire avec Pinterest">
+            </a>
+              <a href="#" 
+              class="w-14 h-14 inline-flex justify-center items-center border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
+              >
+              <img src="ressources/tumblr.svg" class="w-6 h-6" alt="S'inscrire avec Tumblr">
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden sm:block grow">
+          <img
+            src="ressources/nature.jpg"
+            alt=""
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

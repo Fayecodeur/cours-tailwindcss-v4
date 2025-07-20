@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page SEO</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <header>
+      <!-- On utilise une div wrapper pour gérer le padding sur les côtés de la navbar en grand écran. -->
+      <div
+        class="pointer-events-none fixed z-20 top-0 laptop-nav:top-3 left-0 w-full flex justify-center laptop-nav:items-center laptop-nav:px-4"
+      >
+        <nav
+          class="js-navbar pointer-events-auto bg-gray-50 px-4 py-3 w-full flex flex-col laptop-nav:flex-row laptop-nav:justify-between laptop-nav:max-w-5xl laptop-nav:rounded-xl shadow-md laptop-nav:shadow-gray-400"
+        >
+          <!-- Très important, on donne w-14 au logo et au container des deux boutons en grand écran, comme ça ils occupent une même width malgré leur largeur différente, et ainsi, les liens au milieu restent parfaitement centrés.  -->
+          <div class="flex justify-between items-center laptop-nav:w-14">
+            <a href="#accueil">
+              <img
+                src="ressources/RocketLogo.svg"
+                alt="Logo rocket SEO"
+                class="w-10"
+              />
+            </a>
+            <button
+              aria-expanded="false"
+              class="js-toggle-btn bg-white rounded-md p-2 border border-gray-800 cursor-pointer laptop-nav:hidden"
+            >
+              <img
+                src="ressources/menu.svg"
+                alt="Affiche les liens de connexion au survol"
+                class="w-6"
+              />
+            </button>
+          </div>
+
+          <ul
+            class="js-toggle-menu hidden laptop-nav:flex items-center gap-4 pt-6 laptop-nav:pt-0 mb-6 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center"
+          >
+            <li>
+              <a
+                href="#accueil"
+                class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tarifs"
+                class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                >Nos Tarifs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Même width que l'icône du site à gauche de la nav, car cette icône est légèrement plus petite, afin de garder la liste centrée. -->
+          <!-- Flex juste pour enlever le petit espace sous l'image -->
+          <!-- Ce menu disparaît en petit écran -->
+          <div
+            class="w-14 group relative hidden laptop-nav:flex justify-end cursor-pointer"
+          >
+            <img src="ressources/user.svg" alt="" class="w-7" />
+            <!-- On utilise une div pour englober la liste et ajouter un padding-top invisible, ce qui permet de garder un lien entre le survol de l'icône et l'affichage du dropdown, sinon il y a un écart entre les deux et ça annule l'apparition. -->
+            <div
+              class="absolute right-0 top-full pt-6 group-hover:block hidden"
+            >
+              <ul class="w-52 bg-white border border-gray-400 p-5 rounded-xl">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+                  >
+                    Connexion
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+                  >
+                    Inscription
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="js-toggle-menu hidden laptop-nav:hidden! pb-8 gap-3 justify-center"
+          >
+            <a
+              href="#"
+              class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+            >
+              Connexion
+            </a>
+            <a
+              href="#"
+              class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+            >
+              Inscription
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <section
+        id="accueil"
+        class="u-mesh-background relative px-4 text-center pt-36 sm:pt-52 min-h-[680px] sm:min-h-[815px]"
+      >
+        <h1
+          class="text-3xl min-[500px]:text-4xl sm:text-5xl md:text-6xl tracking-tight font-extrabold text-gray-900 mb-3 md:mb-5"
+        >
+          <span class="block">FAITES DÉCOLLER VOTRE</span>
+          <span class="block text-blue-600">BUSINESS EN LIGNE</span>
+        </h1>
+        <p
+          class="max-w-xs md:max-w-2xl mx-auto text-gray-700 sm:text-lg md:text-xl mb-8"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div
+          class="flex flex-col items-center sm:flex-row justify-center gap-4"
+        >
+          <a href="#" class="c-link-btn-blue">Commencer 🚀</a>
+          <a href="#" class="c-link-btn-white">Démo 🕹️</a>
+        </div>
+
+        <a
+          href="#services"
+          class="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 animate-bounce bg-white w-12 h-12 sm:w-16 sm:h-16 shadow-lg rounded-full flex items-center justify-center"
+        >
+          <svg
+            class="w-6 h-6 sm:w-8 sm:h-8 text-violet-500"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </a>
+      </section>
+    </header>
+
+    <main>
+      <section id="services" class="flex flex-col md:flex-row">
+        <div
+          class="bg-radial from-white from-50% to-gray-200 px-10 pb-20 md:pb-32 pt-16 md:pt-24 w-full md:w-1/2 text-center"
+        >
+          <h2
+            class="text-2xl sm:text-3xl xl:text-4xl mb-5 font-extrabold text-gray-800"
+          >
+            <span class="block">PASSEZ À L'ACTION</span>
+            <span class="block text-blue-600">Boostez votre SEO</span>
+          </h2>
+          <p class="max-w-xs mx-auto text-gray-800 mb-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, et!
+          </p>
+          <a href="#" class="c-link-btn-blue">1 mois gratuit 🔥</a>
+        </div>
+
+        <div class="hidden md:block md:w-1/2 relative">
+          <img
+            src="ressources/hommeTravail.jpg"
+            alt=""
+            class="absolute w-full h-full object-cover object-right"
+          />
+        </div>
+      </section>
+
+      <section
+        class="bg-gradient-to-r from-blue-700 to-blue-500 py-12 px-4 text-center sm:py-16 sm:px-6 lg:px-8 lg:py-20"
+      >
+        <h2
+          class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-3 sm:mb-4"
+        >
+          10K+ Développeurs déjà convaincus
+        </h2>
+        <p class="px-4 text-md text-indigo-200 sm:text-xl mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="flex gap-4 sm:gap-10 flex-row justify-center items-center">
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold text-white">100%</p>
+            <p class="text-lg font-medium text-indigo-200">En ligne</p>
+          </div>
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold text-white">24/7</p>
+            <p class="text-lg font-medium text-indigo-200">En Support</p>
+          </div>
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold text-white">100K+</p>
+            <p class="text-lg font-medium text-indigo-200">En Projets</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-20 pb-44 px-4">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center">
+            <h2 class="t-section-title mb-5">Les Tarifs</h2>
+            <hr class="w-48 mx-auto mb-5 border-gray-500" />
+            <p class="max-w-sm mx-auto text-xl text-slate-800 mb-12">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
+              necessitatibus?
+            </p>
+          </div>
+
+          <ul
+            class="flex flex-wrap justify-center items-center flex-col gap-8 md:flex-row"
+          >
+            <li
+              class="min-h-[450px] w-72 flex flex-col shadow-md ring-1 ring-zinc-300 border border-gray-200 rounded-lg px-6 pt-4 pb-6"
+            >
+              <p class="text-2xl font-bold text-gray-900">Basique</p>
+              <p class="text-gray-800 mb-2">Fonctionnalités de base</p>
+              <p class="mb-5">
+                <span class="text-3xl lg:text-4xl font-extrabold text-gray-900"
+                  >12€</span
+                >
+                <span class="font-medium text-slate-800">/mois</span>
+              </p>
+
+              <p
+                class="text-xs font-medium text-gray-900 tracking-wide uppercase mb-2"
+              >
+                Inclu :
+              </p>
+
+              <ul>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+
+              <a
+                href="#"
+                class="mt-auto block w-full bg-gray-800 rounded-md py-2 font-semibold text-white text-center hover:bg-gray-900"
+              >
+                S'abonner à ce plan
+              </a>
+            </li>
+            <li
+              class="min-h-[450px] w-72 flex flex-col shadow-md ring-1 ring-zinc-300 border border-gray-200 rounded-lg px-6 pt-4 pb-6"
+            >
+              <p class="text-2xl font-bold text-gray-900">Pro</p>
+              <p class="text-gray-800 mb-2">Fonctionnalités essentielles</p>
+              <p class="mb-5">
+                <span class="text-3xl lg:text-4xl font-extrabold text-gray-900"
+                  >29€</span
+                >
+                <span class="font-medium text-slate-800">/mois</span>
+              </p>
+
+              <p
+                class="text-xs font-medium text-gray-900 tracking-wide uppercase mb-2"
+              >
+                Inclu :
+              </p>
+
+              <ul>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+
+              <a
+                href="#"
+                class="mt-auto block w-full bg-gray-800 rounded-md py-2 font-semibold text-white text-center hover:bg-gray-900"
+              >
+                S'abonner à ce plan
+              </a>
+            </li>
+            <li
+              class="min-h-[450px] w-72 flex flex-col shadow-md ring-1 ring-zinc-300 border border-gray-200 rounded-lg px-6 pt-4 pb-6"
+            >
+              <p class="text-2xl font-bold text-gray-900">Expert</p>
+              <p class="text-gray-800 mb-2">Fonctionnalités avancées</p>
+              <p class="mb-5">
+                <span class="text-3xl lg:text-4xl font-extrabold text-gray-900"
+                  >79€</span
+                >
+                <span class="font-medium text-slate-800">/mois</span>
+              </p>
+
+              <p
+                class="text-xs font-medium text-gray-900 tracking-wide uppercase mb-2"
+              >
+                Inclu :
+              </p>
+
+              <ul>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap-3 py-2">
+                  <img src="ressources/checked.svg" alt="" class="w-5" />
+                  <span class="text-sm text-gray-800">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+
+              <a
+                href="#"
+                class="mt-auto block w-full bg-gray-800 rounded-md py-2 font-semibold text-white text-center hover:bg-gray-900"
+              >
+                S'abonner à ce plan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-slate-800 py-16 px-4 sm:px-6 sm:pt-20 pb-28">
+        <h2
+          class="text-3xl lg:text-4xl mb-10 font-bold text-gray-50 text-center"
+        >
+          Ces entreprises nous font confiance
+        </h2>
+        <hr class="mx-auto w-44 border-gray-200 mb-10" />
+
+        <div
+          class="grid gap-6 sm:gap-8 grid-cols-[repeat(2,70px)] sm:grid-cols-[repeat(4,80px)] w-fit mx-auto bg-white rounded py-6 sm:py-2 px-10 sm:px-10"
+        >
+          <div class="flex items-center justify-center">
+            <img src="ressources/IBM.png" class="sm:w-16 lg:w-20" alt="" />
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="ressources/apple-logo.png" class="w-10" alt="" />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              src="ressources/github-logo.png"
+              class="sm:w-24 lg:w-28"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="ressources/Audi.png" class="sm:w-20 lg:w-24" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-gray-50 pb-32 mb:pb-40 pt-24 px-4">
+        <h2 class="t-section-title text-center mb-6">Rentrons en contact</h2>
+        <hr class="block mx-auto border-gray-600 mb-14 w-44" />
+
+        <form
+          class="bg-white max-w-3xl mx-auto space-y-6 py-16 px-4 md:px-8 rounded shadow-md border border-slate-300"
+        >
+          <div>
+            <label for="name" class="text-gray-500 mb-2 block">
+              Nom complet
+            </label>
+            <input
+              type="text"
+              id="name"
+              class="f-base-input"
+              placeholder="Votre nom"
+            />
+          </div>
+
+          <div>
+            <label for="company" class="text-gray-500 mb-2 block">
+              Votre entreprise
+            </label>
+            <input
+              type="text"
+              id="company"
+              class="f-base-input"
+              placeholder="Nom de l'entreprise"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="text-gray-500 mb-2 block">
+              Votre message
+            </label>
+            <textarea
+              id="message"
+              class="f-base-input min-h-44 resize-none"
+              placeholder="Votre message"
+            ></textarea>
+          </div>
+
+          <button class="c-link-btn-blue">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-10">
+      <p class="text-center mb-5">
+        <a href="#" class="text-gray-400"
+          >&copy; SEOTOOL, TOUS DROITS RÉSERVÉS</a
+        >
+      </p>
+      <hr class="mx-auto w-36 border-gray-400 mb-5" />
+      <nav class="flex gap-6 justify-center">
+        <a href="#">
+          <img
+            src="ressources/fb.svg"
+            alt="Visiter la page Facebook de SEOTOOL"
+            class="w-6"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="ressources/instagram.svg"
+            alt="Visiter la page Instagram de SEOTOOL"
+            class="w-6"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="ressources/githubpetitlogo.svg"
+            alt="Visiter la page Github de SEOTOOL"
+            class="w-6"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="ressources/twitter.svg"
+            alt="Visiter la page Twitter de SEOTOOL"
+            class="w-6"
+          />
+        </a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

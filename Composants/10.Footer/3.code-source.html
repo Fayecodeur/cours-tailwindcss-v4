@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex flex-col h-full bg-gray-100">
+    <header class="pt-10">
+      <h1 class="text-center text-5xl mb-10">Le Footer</h1>
+    </header>
+    <footer class="mt-auto bg-white">
+      <div
+        class="max-w-3xl lg:max-w-7xl mx-auto px-8 pt-16 pb-10 sm:pb-20 grid gap-5 grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-6"
+      >
+        <div>
+          <p class="mb-3 text-gray-900 text-lg font-semibold">Cuisine(s)🥐</p>
+          <ul class="space-y-2">
+            <li class="text-gray-800">Française</li>
+            <li class="text-gray-800">Japonaise</li>
+            <li class="text-gray-800">Italienne</li>
+            <li class="text-gray-800">Espagnole</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-gray-900 text-lg font-semibold">Services ⏲️</p>
+          <ul class="space-y-2">
+            <li class="my-2 text-gray-800">Blanchisserie</li>
+            <li class="my-2 text-gray-800">Sport</li>
+            <li class="my-2 text-gray-800">Piscine</li>
+            <li class="my-2 text-gray-800">Taxi</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="mb-3 text-gray-900 text-lg font-semibold">
+            International 🌎
+          </p>
+          <ul class="space-y-2">
+            <li class="my-2 text-gray-800">Tokyo</li>
+            <li class="my-2 text-gray-800">New York</li>
+            <li class="my-2 text-gray-800">Londres</li>
+            <li class="my-2 text-gray-800">Moscou</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-gray-900 text-lg font-semibold">Noté 10/10 👌</p>
+          <ul class="space-y-2">
+            <li class="my-2 text-gray-800">Tripadvisor</li>
+            <li class="my-2 text-gray-800">Airbnb</li>
+            <li class="my-2 text-gray-800">Booking</li>
+            <li class="my-2 text-gray-800">Hotel</li>
+          </ul>
+        </div>
+        <div class="col-span-1 min-[420px]:col-span-2">
+          <p class="font-semibold text-gray-800 tracking-wider uppercase mb-5">
+            Promotions chaque mois 📬
+          </p>
+          <form>
+            <label for="email" class="sr-only">Adresse mail</label>
+            <input
+              type="email"
+              id="email"
+              autocomplete="email"
+              name="email"
+              required
+              class="w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:border-gray-500 mb-3"
+              placeholder="Votre email"
+            />
+            <button
+              class="w-full bg-red-500 hover:bg-red-600 border-none rounded-md py-2 px-4 font-medium text-white cursor-pointer"
+            >
+              S'abonner
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200">
+        <div
+          class="max-w-7xl mx-auto py-5 px-4 flex flex-col items-center min-[500px]:flex-row min-[500px]:justify-between"
+        >
+          <p class="text-gray-400 mb-10 min-[500px]:mb-0">&copy; Footer. Tous droits réservés.</p>
+          <div class="flex gap-6">
+            <a href="#">
+              <img src="ressources/twitter-sign.svg" class="w-6" alt="" />
+            </a>
+            <a href="#">
+              <img src="ressources/facebook.svg" class="w-6" alt="" />
+            </a>
+            <a href="#">
+              <img src="ressources/instagram.svg" class="w-6" alt="" />
+            </a>
+            <a href="#">
+              <img src="ressources/tiktok.svg" class="w-6" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
