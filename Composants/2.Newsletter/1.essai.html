@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Newsletter</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+  <section class="bg-gray-800 pt-12 pb-16 sm:pt-16 sm:pb-20 px-6">
+    <h2 class="text-white font-extrabold text-3xl sm:text-4xl text-center mb-3">1 mois gratuit 🎁</h2>
+    <p class="text-md text-gray-100 sm:text-xl mb-3 text-center">Abonne-toi à la Newsletter et reçoit un mois
+      d'utilisation
+      gratuitement.
+    </p>
+    <form class=" max-w-xl mx-auto flex flex-col sm:flex-row">
+      <label for="email" class="sr-only">Email</label>
+      <input type="text" id="email"
+        class="w-full border border-gray-500 px-6 py-3 rounded-md  placeholder:text-gray-100 sm:mr-4 focus:border-gray-300 outline-none mb-3 sm:mb-0  "
+        placeholder="Entrer votre email">
+      <button
+        class="bg-indigo-500 rounded-md text-white px-6 py-3 cursor-pointer hover:bg-indigo-600 transition">S'abonner</button>
+    </form>
+    <p class="text-gray-100 mt-3 text-center text-base">Pas de spam avec nous, <a class="font-bold underline"
+        href="#">notre
+        politique de
+        confidentialité.</a>
+    </p>
+  </section>
+</body>
+
 </html>
