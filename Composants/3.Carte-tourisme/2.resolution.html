@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carte-tourisme</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte-tourisme</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-800">
+  <section class="flex flex-col sm:flex-row bg-gray-100 mt-0 sm:mt-24 max-w-4xl mx-auto">
+    <div class="relative w-full sm:1/2 h-64 sm:h-auto">
+      <img src="ressources/venise.jpg" class="absolute h-full w-full object-cover" alt="">
+    </div>
+    <div class="w-full sm:h-1/2  px-8 pt-4 pb-6">
+      <h2 class="text-2xl mb-4">Votre voyage en Italie 🍝</h2>
+      <p class="font-thin mb-8 sm:mb-20 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        commodi
+        aspernatur
+        quos
+        suscipit
+        reiciendis eaque reprehenderit velit mollitia, quod nobis eos! Magnam aliquam a officia.</p>
+      <a href="#"
+        class="inline-flex items-center p-3 shadow-md gap-4 text-base bg-gradient-to-r from bg-red-300 to-orange-300 rounded">
+        <span>Obtenir un
+          ticket</span>
+        <img src="ressources/paper-plane.svg" class="w-6" alt="">
+      </a>
+    </div>
+  </section>
+</body>
+
 </html>
