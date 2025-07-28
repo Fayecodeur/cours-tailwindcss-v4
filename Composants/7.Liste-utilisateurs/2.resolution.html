@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liste utilisateurs</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste utilisateurs</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-50">
+  <main>
+    <section class="max-w-[650px] md:max-w-5xl mx-auto p-6 md:p-10">
+      <h1 class="text-3xl text-center  md:text-left font-thin md:text-4xl mb-6">Liste des <span>employes</span></h1>
+
+      <div class="order-last md:order-first flex  flex-col md:flex-row items-center ">
+        <div class="flex bg-white p-1 w-full items-center md:w-80 border border-gray-400 rounded focus-within:outline">
+          <label for="">
+            <img src="ressources/magnifying-glass.svg" class="w-6" alt="">
+          </label>
+          <input type="text" class="w-full p-1 outline-none">
+        </div>
+        <div class="order-first md:order-last flex md:ml-auto  gap-4 mb-6 md:mb-0">
+          <button class="bg-blue-500 px-3 py-2 rounded cursor-pointer text-white">Employes</button>
+          <button class="bg-gray-100 border border-gray-500 px-3 py-2 rounded cursor-pointer">Admin</button>
+          <button class="bg-gray-100 border border-gray-500 px-3 py-2 rounded cursor-pointer">RH</button>
+        </div>
+      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-32  mt-5 md:mt-10">
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+        <li class="bg-gray-100 p-5 flex rounded shadow ring-2 ring-zinc-200">
+          <img src="ressources/face1.jpg" class="size-20 rounded-full mr-4 object-cover" alt="">
+          <div>
+            <h2 class="text-xl font-serif  ">Anna Dupont</h2>
+            <span class="text-sm">Paris, France</span>
+            <p class="mt-3">Développeur Front-End</p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>
