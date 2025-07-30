@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page d'inscription</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page d'inscription</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+  <main>
+    <section class="flex min-h-screen">
+      <!-- partie gauche formulaire -->
+      <div
+        class="flex flex-col justify-center shrink-0 grow sm:grow-0 sm:w-[500px] min-[400px]:px-6 min-[500px]:px-12 py-16">
+        <div class="mb-14">
+          <h1 class="font font-extrabold text-3xl mb-2">Inscription</h1>
+          <a href="#" class="block text-green-600 hover:text-green-700 font-medium mb-5 text-sm">Déjà inscrit ?
+            Connectez-vous.
+          </a>
+          <!-- formualire -->
+          <form action="#" class="space-y-4 mb-8">
+            <!-- email -->
+            <div>
+              <label for="email" class="block mb-2 text-gray-800 font-semibold">Adresse e-mail</label>
+              <input type="email" id="email" class="w-full px-3 py-2 border placeholder:text-gray-400 placeholder:text-sm border-gray-300 shadow-sm rounded-md focus:outline focus:outline-gray-400 
+                300" placeholder="Votre email">
+            </div>
+
+            <!-- mot de passe -->
+            <div>
+              <label for="mdp" class="block mb-2 text-gray-800 font-semibold">Mot de passe</label>
+              <input type="password" id="mdp" class="w-full px-3 py-2 border placeholder:text-gray-400 placeholder:text-sm border-gray-300 shadow-sm rounded-md focus:outline focus:outline-gray-400 
+                300" placeholder="Votre mot de passe">
+            </div>
+
+            <!-- confirmation mot de passe -->
+            <div>
+              <label for="confirmation" class="block mb-2 text-gray-800 font-semibold">Mot de passe</label>
+              <input type="password" id="confirmation" class="w-full px-3 py-2 border placeholder:text-gray-400 placeholder:text-sm border-gray-300 shadow-sm rounded-md focus:outline focus:outline-gray-400 
+                300" placeholder="Confirmez votre mot de passe">
+            </div>
+
+            <!-- case a cocher -->
+            <div class="flex items-center">
+              <input type="checkbox" id="remember_to_me" class="size-4 border-gray-300 mr-2">
+              <label for="remember_to_me" class="text-sm text-gray-700">Se souvenir de moi</label>
+            </div>
+
+            <!-- boutton de soumission -->
+            <button
+              class="bg-green-800 hover:bg-green-700 w-full px-6 py-2 text-center text-white font-medium shadow cursor-pointer rounded">S'inscrire</button>
+          </form>
+          <p class="text-gray-500 text-center mb-3">Ou s'inscrire avec :</p>
+          <!-- liens -->
+          <div class="flex justify-center items-center gap-3">
+            <a href="#"
+              class="size-14 bg-white shadow rounded hover:bg-gray-50 border border-gray-300 flex items-center justify-center">
+              <img src="ressources/ig.svg" class="size-8" alt="">
+            </a>
+            <a href="#"
+              class="size-14 bg-white shadow rounded hover:bg-gray-50 border border-gray-300 flex items-center justify-center">
+              <img src="ressources/pinterest.svg" class="size-8" alt="">
+            </a>
+            <a href="#"
+              class="size-14 bg-white shadow rounded hover:bg-gray-50 border border-gray-300 flex items-center justify-center">
+              <img src="ressources/tumblr.svg" class="size-8" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- partie droite image  -->
+      <div class="hidden sm:block grow">
+        <img src="ressources/nature.jpg" class="w-full h-full object-cover" alt="">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
