@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50">
+  <header class="p-10">
+    <h1 class=" text-2xl text-center">Le Footer</h1>
+  </header>
+  <main class="flex-grow">
+    <p></p>
+  </main>
+  <footer class="bg-white p-10 ">
+    <div class=" container mx-auto grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <!-- cuisine -->
+      <div>
+        <p class="text-xl font-semibold mb-3">Cuisine(s)🥐</p>
+        <ul class="space-y-3">
+          <li class="text-gray-800 ">Française</li>
+          <li class="text-gray-800 ">Japonaise</li>
+          <li class="text-gray-800 ">Italienne
+          </li>
+          <li class="text-gray-800 ">Espagnole</li>
+        </ul>
+      </div>
+
+      <!-- services -->
+      <div>
+        <p class="text-xl font-semibold mb-3">Services ⏲️</p>
+        <ul class="space-y-3">
+          <li class="text-gray-800 ">Blanchisserie</li>
+          <li class="text-gray-800 ">Sport</li>
+          <li class="text-gray-800 ">Piscine
+          </li>
+          <li class="text-gray-800 ">Taxi</li>
+        </ul>
+      </div>
+
+      <!-- International -->
+      <div>
+        <p class="text-xl font-semibold mb-3">International 🌎</p>
+        <ul class="space-y-3">
+          <li class="text-gray-800 ">Tokyo</li>
+          <li class="text-gray-800 ">New York
+          </li>
+          <li class="text-gray-800 ">Londres
+          </li>
+          <li class="text-gray-800 ">Moscou</li>
+        </ul>
+      </div>
+
+      <!-- Note -->
+      <div>
+        <p class="text-xl font-semibold mb-3">Noté 10/10 👌</p>
+        <ul class="space-y-3">
+          <li class="text-gray-800 ">Tripadvisor</li>
+          <li class="text-gray-800 ">Airbnb</li>
+          <li class="text-gray-800 ">Booking
+          </li>
+          <li class="text-gray-800 ">Hotel</li>
+        </ul>
+      </div>
+
+      <!-- newsletter -->
+      <div class="col-span-1 min-[420px]:col-span-2">
+        <p class="text-xl font-semibold text-gray-800 mb-3">Promotions chaque mois 📬</p>
+      </div>
+
+
+    </div>
+
+
+
+  </footer>
+</body>
+
 </html>
