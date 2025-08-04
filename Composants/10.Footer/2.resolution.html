@@ -16,68 +16,78 @@
   <main class="flex-grow">
     <p></p>
   </main>
-  <footer class="bg-white p-10 ">
-    <div class=" container mx-auto grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+
+  <footer class="bg-white pt-10">
+    <!-- Contenu centré -->
+    <div class="container mx-auto px-4 grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
       <!-- cuisine -->
       <div>
         <p class="text-xl font-semibold mb-3">Cuisine(s)🥐</p>
-        <ul class="space-y-3">
-          <li class="text-gray-800 ">Française</li>
-          <li class="text-gray-800 ">Japonaise</li>
-          <li class="text-gray-800 ">Italienne
-          </li>
-          <li class="text-gray-800 ">Espagnole</li>
+        <ul class="space-y-3 text-gray-800">
+          <li>Française</li>
+          <li>Japonaise</li>
+          <li>Italienne</li>
+          <li>Espagnole</li>
         </ul>
       </div>
 
       <!-- services -->
       <div>
         <p class="text-xl font-semibold mb-3">Services ⏲️</p>
-        <ul class="space-y-3">
-          <li class="text-gray-800 ">Blanchisserie</li>
-          <li class="text-gray-800 ">Sport</li>
-          <li class="text-gray-800 ">Piscine
-          </li>
-          <li class="text-gray-800 ">Taxi</li>
+        <ul class="space-y-3 text-gray-800">
+          <li>Blanchisserie</li>
+          <li>Sport</li>
+          <li>Piscine</li>
+          <li>Taxi</li>
         </ul>
       </div>
 
       <!-- International -->
       <div>
         <p class="text-xl font-semibold mb-3">International 🌎</p>
-        <ul class="space-y-3">
-          <li class="text-gray-800 ">Tokyo</li>
-          <li class="text-gray-800 ">New York
-          </li>
-          <li class="text-gray-800 ">Londres
-          </li>
-          <li class="text-gray-800 ">Moscou</li>
+        <ul class="space-y-3 text-gray-800">
+          <li>Tokyo</li>
+          <li>New York</li>
+          <li>Londres</li>
+          <li>Moscou</li>
         </ul>
       </div>
 
       <!-- Note -->
       <div>
         <p class="text-xl font-semibold mb-3">Noté 10/10 👌</p>
-        <ul class="space-y-3">
-          <li class="text-gray-800 ">Tripadvisor</li>
-          <li class="text-gray-800 ">Airbnb</li>
-          <li class="text-gray-800 ">Booking
-          </li>
-          <li class="text-gray-800 ">Hotel</li>
+        <ul class="space-y-3 text-gray-800">
+          <li>Tripadvisor</li>
+          <li>Airbnb</li>
+          <li>Booking</li>
+          <li>Hotel</li>
         </ul>
       </div>
 
       <!-- newsletter -->
       <div class="col-span-1 min-[420px]:col-span-2">
         <p class="text-xl font-semibold text-gray-800 mb-3">Promotions chaque mois 📬</p>
+        <form>
+          <label for="email" class="sr-only">Adresse email</label>
+          <input type="email"
+            class="w-full py-2 px-6 border rounded-md border-gray-300 shadow focus:outline-none focus:border-gray-500 placeholder:text-gray-500 mb-3"
+            placeholder="Votre email">
+          <button
+            class="w-full text-center bg-red-500 px-3 py-2 rounded-md text-white font-semibold cursor-pointer hover:bg-red-700">S'inscrire</button>
+        </form>
       </div>
-
-
     </div>
 
-
-
+    <!-- ligne sur toute la largeur -->
+    <div class="border-t border-gray-300 mt-10 w-full">
+      <div class="py-5 text-center text-sm text-gray-600">
+        © 2025 MonSite. Tous droits réservés.
+      </div>
+    </div>
   </footer>
+
+
 </body>
 
 </html>
