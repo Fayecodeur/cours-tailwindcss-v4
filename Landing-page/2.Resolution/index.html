@@ -9,7 +9,81 @@
 </head>
 
 <body>
+  <header>
+    <!-- On utilise une div wrapper pour gérer le padding sur les côtés de la navbar en grand écran. -->
+    <div
+      class="pointer-events-none fixed z-20 top-0 laptop-nav:top-3 left-0 w-full flex justify-center laptop-nav:items-center laptop-nav:px-4">
+      <nav
+        class="js-navbar pointer-events-auto bg-gray-50 px-4 py-3 w-full flex flex-col laptop-nav:flex-row laptop-nav:justify-between laptop-nav:max-w-5xl laptop-nav:rounded-xl shadow-md laptop-nav:shadow-gray-400">
+        <!-- Très important, on donne w-14 au logo et au container des deux boutons en grand écran, comme ça ils occupent une même width malgré leur largeur différente, et ainsi, les liens au milieu restent parfaitement centrés.  -->
+        <div class="flex justify-between items-center laptop-nav:w-14">
+          <a href="#accueil">
+            <img src="ressources/RocketLogo.svg" alt="Logo rocket SEO" class="w-10" />
+          </a>
+          <button aria-expanded="false"
+            class="js-toggle-btn bg-white rounded-md p-2 border border-gray-800 cursor-pointer laptop-nav:hidden">
+            <img src="ressources/menu.svg" alt="Affiche les liens de connexion au survol" class="w-6" />
+          </button>
+        </div>
 
+        <ul
+          class="js-toggle-menu hidden laptop-nav:flex items-center gap-4 pt-6 laptop-nav:pt-0 mb-6 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center">
+          <li>
+            <a href="#accueil"
+              class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900">Accueil</a>
+          </li>
+          <li>
+            <a href="#services"
+              class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900">Services</a>
+          </li>
+          <li>
+            <a href="#tarifs" class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900">Nos
+              Tarifs</a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="js-navbar-link font-medium text-[17px] text-zinc-800 hover:text-zinc-900">Contact</a>
+          </li>
+        </ul>
+        <!-- Même width que l'icône du site à gauche de la nav, car cette icône est légèrement plus petite, afin de garder la liste centrée. -->
+        <!-- Flex juste pour enlever le petit espace sous l'image -->
+        <!-- Ce menu disparaît en petit écran -->
+        <div class="w-14 group relative hidden laptop-nav:flex justify-end cursor-pointer">
+          <img src="ressources/user.svg" alt="" class="w-7" />
+          <!-- On utilise une div pour englober la liste et ajouter un padding-top invisible, ce qui permet de garder un lien entre le survol de l'icône et l'affichage du dropdown, sinon il y a un écart entre les deux et ça annule l'apparition. -->
+          <div class="absolute right-0 top-full pt-6 group-hover:block hidden">
+            <ul class="w-52 bg-white border border-gray-400 p-5 rounded-xl">
+              <li class="mb-3">
+                <a href="#"
+                  class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center">
+                  Connexion
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center">
+                  Inscription
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="js-toggle-menu hidden laptop-nav:hidden! pb-8 gap-3 justify-center">
+          <a href="#"
+            class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center">
+            Connexion
+          </a>
+          <a href="#"
+            class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center">
+            Inscription
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <section id="acceuil" class="u-mesh-background"></section>
+  </header>
 </body>
 
 </html>
