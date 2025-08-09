@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-laptop-nav: 820px;
+}
+@layer components {
+  
+  /* Components */
+  .c-link-btn-white {
+    @apply w-[200px] rounded-md shadow inline-block px-4 py-2 sm:py-3 text-base sm:text-[17px] font-medium bg-white hover:bg-gray-50 cursor-pointer;
+  }
+  .c-link-btn-blue {
+    @apply w-[200px] rounded-md shadow inline-block px-4 py-2 sm:py-3 text-base sm:text-[17px] font-medium text-white bg-blue-600 hover:bg-blue-700 cursor-pointer;
+  }
+
+  /* Typography */
+  .t-section-title {
+    @apply font-extrabold text-gray-800 text-3xl md:text-[42px];
+  }
+
+  /* Form */
+
+  .f-base-input {
+    @apply w-full shadow-sm py-3 px-4 rounded-md border border-gray-300 focus:outline-none focus:border-gray-500;
+  }
+}
+
+@layer utilities {
+  .u-mesh-background {
+    background-image: url('../ressources/stylish-mesh-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
